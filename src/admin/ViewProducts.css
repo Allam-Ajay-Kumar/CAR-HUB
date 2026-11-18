@@ -1,0 +1,380 @@
+
+/* =====================================
+   CARHUB PRODUCT GALLERY
+   Silver + Racing Red + White
+===================================== */
+
+.view-products-page {
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+    padding: 10px;
+    color: #374151;
+    box-sizing: border-box;
+}
+
+.view-products-page *,
+.view-products-page *::before,
+.view-products-page *::after {
+    box-sizing: border-box;
+}
+
+/* Header */
+
+.products-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.products-label {
+    color: #C1121F;
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+
+.products-header h2 {
+    margin: 9px 0;
+    color: #1F2937;
+    font-size: 28px;
+    font-weight: 800;
+}
+
+.products-header p {
+    margin: 0;
+    color: #6B7280;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+/* Product count */
+
+.products-count {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 16px;
+    background: #F9FAFB;
+    border: 1px solid #D1D5DB;
+    border-radius: 10px;
+    color: #1F2937;
+    font-size: 13px;
+    font-weight: 700;
+    white-space: nowrap;
+}
+
+.products-count i {
+    color: #C1121F;
+    font-size: 17px;
+}
+
+/* Product grid */
+
+.products-grid {
+    align-items: stretch;
+}
+
+/* Product card */
+
+.product-card {
+    height: 100%;
+    overflow: hidden;
+    background: #FFFFFF;
+    border: 1px solid #D1D5DB;
+    border-radius: 14px;
+    box-shadow: 0 5px 18px rgba(31, 41, 55, 0.05);
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease,
+        border-color 0.25s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    border-color: #C1121F;
+    box-shadow: 0 12px 28px rgba(31, 41, 55, 0.12);
+}
+
+/* Product image */
+
+.product-image-container {
+    position: relative;
+    width: 100%;
+    height: 210px;
+    overflow: hidden;
+    background: #E5E7EB;
+}
+
+.product-image {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+}
+
+.product-card:hover .product-image {
+    transform: scale(1.04);
+}
+
+/* Product ID badge */
+
+.product-id {
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    padding: 7px 11px;
+    background: rgba(31, 41, 55, 0.94);
+    border: 1px solid #FF737B;
+    border-radius: 6px;
+    color: #FFFFFF;
+    font-size: 11px;
+    font-weight: 700;
+}
+
+/* Product content */
+
+.product-content {
+    padding: 20px;
+}
+
+.product-brand {
+    color: #C1121F;
+    font-size: 10px;
+    font-weight: 800;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+}
+
+.product-name {
+    margin: 8px 0 18px;
+    color: #1F2937;
+    font-size: 20px;
+    font-weight: 800;
+    overflow-wrap: anywhere;
+}
+
+/* Specifications */
+
+.product-specifications {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding-bottom: 18px;
+    border-bottom: 1px solid #D1D5DB;
+}
+
+.product-spec {
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+    max-width: 100%;
+    padding: 8px 10px;
+    background: #F3F4F6;
+    border-radius: 7px;
+    color: #4B5563;
+    font-size: 11px;
+    overflow-wrap: anywhere;
+}
+
+.product-spec i {
+    color: #C1121F;
+    font-size: 12px;
+}
+
+/* Product footer */
+
+.product-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+    padding-top: 18px;
+}
+
+.product-price-label {
+    color: #6B7280;
+    font-size: 11px;
+}
+
+.product-price {
+    margin: 5px 0 0;
+    color: #1F2937;
+    font-size: 20px;
+    font-weight: 800;
+    overflow-wrap: anywhere;
+}
+
+/* Delete button */
+
+.product-delete-btn {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 13px;
+    border: 1px solid #C1121F;
+    border-radius: 8px;
+    background: #FCE8E9;
+    color: #C1121F;
+    font-size: 12px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.25s ease;
+}
+
+.product-delete-btn:hover {
+    background: #C1121F;
+    border-color: #C1121F;
+    color: #FFFFFF;
+}
+
+/* Empty inventory */
+
+.products-empty {
+    padding: 55px 20px;
+    margin-top: 10px;
+    text-align: center;
+    background: #F9FAFB;
+    border: 1px dashed #9CA3AF;
+    border-radius: 14px;
+}
+
+.products-empty > i {
+    margin-bottom: 15px;
+    color: #C1121F;
+    font-size: 42px;
+}
+
+.products-empty h4 {
+    color: #1F2937;
+    font-size: 19px;
+    font-weight: 800;
+}
+
+.products-empty p {
+    margin-bottom: 0;
+    color: #6B7280;
+    font-size: 13px;
+}
+
+/* =====================================
+   RESPONSIVE DESIGN
+===================================== */
+
+/* Tablets and smaller laptops */
+
+@media (max-width: 991px) {
+    .products-header h2 {
+        font-size: 25px;
+    }
+
+    .product-image-container {
+        height: 190px;
+    }
+
+    .product-content {
+        padding: 17px;
+    }
+
+    .product-name {
+        font-size: 18px;
+    }
+
+    .product-price {
+        font-size: 18px;
+    }
+}
+
+/* Mobile and tablet */
+
+@media (max-width: 767px) {
+    .view-products-page {
+        padding: 16px;
+    }
+
+    .products-header {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 15px;
+        margin-bottom: 24px;
+    }
+
+    .products-header h2 {
+        font-size: 24px;
+    }
+
+    .products-header p {
+        font-size: 13px;
+    }
+
+    .products-count {
+        padding: 10px 13px;
+    }
+
+    .product-image-container {
+        height: 230px;
+    }
+
+    .product-content {
+        padding: 18px;
+    }
+
+    .product-name {
+        font-size: 19px;
+    }
+}
+
+/* Small mobile phones */
+
+@media (max-width: 480px) {
+    .view-products-page {
+        padding: 12px;
+    }
+
+    .products-label {
+        font-size: 9px;
+        letter-spacing: 1.5px;
+    }
+
+    .products-header h2 {
+        font-size: 22px;
+    }
+
+    .products-header p {
+        font-size: 12px;
+    }
+
+    .product-image-container {
+        height: 195px;
+    }
+
+    .product-content {
+        padding: 15px;
+    }
+
+    .product-name {
+        font-size: 17px;
+        margin-bottom: 15px;
+    }
+
+    .product-footer {
+        gap: 8px;
+    }
+
+    .product-price {
+        font-size: 18px;
+    }
+
+    .product-delete-btn {
+        padding: 9px 10px;
+        font-size: 11px;
+    }
+
+    .product-spec {
+        font-size: 10px;
+    }
+}

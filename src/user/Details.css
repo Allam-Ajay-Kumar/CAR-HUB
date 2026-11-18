@@ -1,0 +1,1126 @@
+/* =====================================
+   CARHUB DETAILS PAGE
+   Navy + Champagne Gold + Ivory
+===================================== */
+
+.details-page {
+    min-height: 100vh;
+    padding: 45px 20px 35px;
+    background: #f5f6f8;
+    color: #243247;
+    box-sizing: border-box;
+}
+
+.details-page *,
+.details-page *::before,
+.details-page *::after {
+    box-sizing: border-box;
+}
+
+.details-container {
+    max-width: 1250px;
+    margin: 0 auto;
+}
+
+/* Page Heading */
+
+.details-heading {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.details-subtitle {
+    display: inline-block;
+    margin-bottom: 10px;
+    color: #b08d57;
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 3px;
+}
+
+.details-heading h1 {
+    margin: 0;
+    color: #17263c;
+    font-size: clamp(30px, 4vw, 43px);
+    font-weight: 800;
+    letter-spacing: -1px;
+}
+
+.details-heading h1 span {
+    color: #b08d57;
+}
+
+.details-heading p {
+    margin-top: 12px;
+    margin-bottom: 0;
+    color: #7b8491;
+    font-size: 15px;
+}
+
+/* Main Details Card */
+
+.details-card {
+    overflow: hidden;
+    align-items: stretch;
+    margin: 0;
+    background: #ffffff;
+    border: 1px solid #e6e8ec;
+    border-radius: 20px;
+    box-shadow: 0 15px 45px rgba(23, 38, 60, 0.08);
+}
+
+/* Image Section */
+
+.details-image-section {
+    padding: 25px;
+    display: flex;
+    align-items: center;
+}
+
+.details-image-box {
+    position: relative;
+    width: 100%;
+    min-width: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f1f3f6;
+    border-radius: 15px;
+}
+
+.details-image {
+    display: block;
+    width: 100%;
+    height: 430px;
+    object-fit: contain;
+    padding: 15px;
+    transition: transform 0.4s ease;
+}
+
+.details-image-box:hover .details-image {
+    transform: scale(1.04);
+}
+
+.details-image-badge {
+    position: absolute;
+    top: 18px;
+    left: 18px;
+    padding: 9px 14px;
+    color: #ffffff;
+    background: #17263c;
+    border-radius: 6px;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+}
+
+/* Information Section */
+
+.details-info-section {
+    min-width: 0;
+    padding: 35px 35px 30px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.details-brand {
+    margin-bottom: 8px;
+    color: #b08d57;
+    font-size: 13px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.details-car-name {
+    margin: 0;
+    color: #17263c;
+    font-size: clamp(25px, 3vw, 35px);
+    font-weight: 800;
+    line-height: 1.3;
+    overflow-wrap: anywhere;
+}
+
+.details-divider {
+    width: 65px;
+    height: 4px;
+    margin: 20px 0 25px;
+    background: #b08d57;
+    border-radius: 10px;
+}
+
+/* Specifications */
+
+.details-specifications {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.details-spec-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    min-width: 0;
+}
+
+.details-spec-icon {
+    width: 48px;
+    height: 48px;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #b08d57;
+    background: #f7f3ec;
+    border-radius: 12px;
+    font-size: 18px;
+}
+
+.details-spec-item span {
+    display: block;
+    margin-bottom: 4px;
+    color: #858d99;
+    font-size: 12px;
+}
+
+.details-spec-item h6 {
+    margin: 0;
+    color: #243247;
+    font-size: 15px;
+    font-weight: 700;
+    overflow-wrap: anywhere;
+}
+
+/* Price Section */
+
+.details-price-box {
+    margin-top: 28px;
+    padding: 20px;
+    background: #f7f8fa;
+    border: 1px solid #eaedf1;
+    border-radius: 12px;
+}
+
+.details-price-box span {
+    display: block;
+    margin-bottom: 8px;
+    color: #7b8491;
+    font-size: 13px;
+}
+
+.details-price-box h3 {
+    margin: 0;
+    color: #17263c;
+    font-size: clamp(23px, 3vw, 30px);
+    font-weight: 800;
+    overflow-wrap: anywhere;
+}
+
+.details-price-box h3 i {
+    color: #b08d57;
+    font-size: 22px;
+}
+
+/* Add to Cart Button */
+
+.details-cart-btn {
+    position: relative;
+    width: 100%;
+    min-height: 55px;
+    margin-top: 20px;
+    padding: 14px 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    color: #ffffff;
+    background: #17263c;
+    border: 2px solid #17263c;
+    border-radius: 10px;
+    font-size: 15px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background 0.3s ease, color 0.3s ease,
+                border-color 0.3s ease, transform 0.3s ease;
+}
+
+.details-cart-btn:hover {
+    color: #17263c;
+    background: #d5b77a;
+    border-color: #d5b77a;
+    transform: translateY(-2px);
+}
+
+.details-btn-arrow {
+    position: absolute;
+    right: 18px;
+    transition: transform 0.3s ease;
+}
+
+.details-cart-btn:hover .details-btn-arrow {
+    transform: translateX(4px);
+}
+
+/* Footer Note */
+
+.details-footer-note {
+    margin-top: 18px;
+    color: #818a97;
+    font-size: 12px;
+    text-align: center;
+}
+
+.details-footer-note i {
+    margin-right: 6px;
+    color: #b08d57;
+}
+
+/* Bottom Note */
+
+.details-bottom-text {
+    margin-top: 25px;
+    color: #7b8491;
+    font-size: 13px;
+    text-align: center;
+}
+
+.details-bottom-text i {
+    margin-right: 6px;
+    color: #b08d57;
+}
+
+/* =====================================
+   TABLET RESPONSIVENESS
+===================================== */
+
+@media (max-width: 991px) {
+    .details-page {
+        padding: 35px 16px;
+    }
+
+    .details-image-section {
+        padding: 20px;
+    }
+
+    .details-image {
+        height: 350px;
+    }
+
+    .details-info-section {
+        padding: 25px 20px;
+    }
+
+    .details-car-name {
+        font-size: 27px;
+    }
+
+    .details-divider {
+        margin: 16px 0 20px;
+    }
+
+    .details-specifications {
+        gap: 15px;
+    }
+
+    .details-price-box {
+        margin-top: 22px;
+    }
+}
+
+/* =====================================
+   MOBILE RESPONSIVENESS
+===================================== */
+
+@media (max-width: 767px) {
+    .details-page {
+        padding: 25px 12px;
+    }
+
+    .details-heading {
+        margin-bottom: 25px;
+    }
+
+    .details-heading p {
+        font-size: 13px;
+    }
+
+    .details-card {
+        border-radius: 15px;
+    }
+
+    .details-image-section {
+        padding: 15px 15px 5px;
+    }
+
+    .details-image-box {
+        border-radius: 12px;
+    }
+
+    .details-image {
+        height: 280px;
+        padding: 10px;
+    }
+
+    .details-image-badge {
+        top: 12px;
+        left: 12px;
+        padding: 7px 10px;
+        font-size: 10px;
+    }
+
+    .details-info-section {
+        padding: 22px 18px 25px;
+    }
+
+    .details-brand {
+        font-size: 12px;
+    }
+
+    .details-car-name {
+        font-size: 27px;
+    }
+
+    .details-divider {
+        margin: 15px 0 20px;
+    }
+
+    .details-specifications {
+        gap: 15px;
+    }
+
+    .details-spec-icon {
+        width: 43px;
+        height: 43px;
+        font-size: 16px;
+    }
+
+    .details-price-box {
+        margin-top: 22px;
+        padding: 16px;
+    }
+
+    .details-cart-btn {
+        min-height: 52px;
+        font-size: 14px;
+    }
+
+    .details-bottom-text {
+        font-size: 12px;
+        line-height: 1.7;
+    }
+}
+
+/* =====================================
+   SMALL MOBILE SCREENS
+===================================== */
+
+@media (max-width: 380px) {
+    .details-page {
+        padding: 20px 8px;
+    }
+
+    .details-image {
+        height: 220px;
+    }
+
+    .details-info-section {
+        padding: 20px 14px;
+    }
+
+    .details-car-name {
+        font-size: 23px;
+    }
+
+    .details-price-box h3 {
+        font-size: 23px;
+    }
+
+    .details-btn-arrow {
+        right: 12px;
+    }
+}
+/* =====================================
+   CARHUB TEST DRIVE MODAL
+   NAVY + CHAMPAGNE GOLD + IVORY
+===================================== */
+
+
+/* Test Drive Button */
+
+.details-test-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+    padding: 13px 22px;
+
+    border: 1px solid #172A45;
+    border-radius: 8px;
+
+    background: transparent;
+    color: #172A45;
+
+    font-size: 14px;
+    font-weight: 650;
+
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.details-test-btn:hover {
+    background: #172A45;
+    color: #fff;
+}
+
+.details-test-btn i {
+    color: #B89552;
+}
+
+
+/* Modal Dialog */
+
+.test-modal .modal-dialog {
+    max-width: 520px;
+    margin: 1.5rem auto;
+}
+
+.test-modal .modal-content {
+    border: none;
+    border-radius: 18px;
+    overflow: hidden;
+
+    background: #F7F5F0;
+
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.25);
+}
+
+
+/* Modal Header */
+
+.test-modal-header {
+    background: #172A45;
+    color: #fff;
+
+    padding: 28px 30px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 15px;
+}
+
+.test-subtitle {
+    color: #B89552;
+
+    font-size: 11px;
+    font-weight: 700;
+
+    letter-spacing: 2px;
+}
+
+.test-modal-header h4 {
+    font-size: 25px;
+    font-weight: 700;
+
+    margin: 8px 0;
+}
+
+.test-modal-header p {
+    font-size: 13px;
+    color: #d0d7e0;
+
+    margin: 0;
+    line-height: 1.6;
+}
+
+
+/* Modal Body */
+
+.test-modal-body {
+    padding: 25px 30px 28px;
+}
+
+
+/* Selected Car */
+
+.selected-test-car {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+
+    padding: 15px;
+    margin-bottom: 22px;
+
+    background: #fff;
+
+    border: 1px solid #e5dfd2;
+    border-radius: 12px;
+}
+
+.selected-test-car > i {
+    width: 45px;
+    height: 45px;
+
+    background: #172A45;
+    color: #B89552;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 10px;
+
+    font-size: 20px;
+}
+
+.selected-test-car span {
+    font-size: 11px;
+    color: #777;
+
+    display: block;
+    margin-bottom: 4px;
+}
+
+.selected-test-car h6 {
+    margin: 0;
+
+    font-size: 15px;
+    font-weight: 700;
+
+    color: #172A45;
+}
+
+
+/* Labels */
+
+.test-modal .form-label {
+    font-size: 13px;
+    font-weight: 650;
+
+    color: #243247;
+
+    margin-bottom: 8px;
+}
+
+
+/* Input Groups */
+
+.test-input-group {
+    position: relative;
+
+    display: flex;
+    align-items: center;
+}
+
+.test-input-group > i {
+    position: absolute;
+
+    left: 14px;
+
+    color: #B89552;
+
+    z-index: 2;
+
+    font-size: 14px;
+}
+
+.test-input-group .form-control {
+    height: 47px;
+
+    padding-left: 42px;
+
+    border: 1px solid #ddd8ce;
+    border-radius: 9px;
+
+    background: #fff;
+    color: #243247;
+
+    font-size: 13px;
+
+    box-shadow: none;
+    min-width: 0;
+}
+
+.test-input-group .form-control:focus {
+    border-color: #B89552;
+
+    box-shadow: 0 0 0 3px rgba(184, 149, 82, 0.13);
+}
+
+
+/* Time Selection */
+
+.test-time-select {
+    height: 47px;
+
+    border: 1px solid #ddd8ce;
+    border-radius: 9px;
+
+    font-size: 13px;
+    color: #243247;
+
+    background-color: #fff;
+
+    box-shadow: none;
+}
+
+.test-time-select:focus {
+    border-color: #B89552;
+
+    box-shadow: 0 0 0 3px rgba(184, 149, 82, 0.13);
+}
+
+
+/* Submit Button */
+
+.test-submit-btn {
+    width: 100%;
+    height: 49px;
+
+    border: none;
+    border-radius: 9px;
+
+    background: #172A45;
+    color: #fff;
+
+    font-size: 14px;
+    font-weight: 650;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+
+    cursor: pointer;
+
+    transition: all 0.3s ease;
+}
+
+.test-submit-btn i {
+    color: #B89552;
+
+    transition: transform 0.3s ease;
+}
+
+.test-submit-btn:hover {
+    background: #B89552;
+    color: #172A45;
+}
+
+.test-submit-btn:hover i {
+    color: #172A45;
+    transform: translateX(5px);
+}
+
+
+/* Footer Note */
+
+.test-footer-note {
+    text-align: center;
+
+    font-size: 11px;
+    color: #777;
+
+    margin: 17px 0 0;
+}
+
+.test-footer-note i {
+    color: #B89552;
+
+    margin-right: 5px;
+}
+
+
+/* =====================================
+   RESPONSIVE DESIGN
+===================================== */
+
+@media (max-width: 768px) {
+
+    .test-modal .modal-dialog {
+        max-width: 500px;
+        margin: 20px auto;
+    }
+
+}
+
+
+@media (max-width: 576px) {
+
+    .test-modal .modal-dialog {
+        margin: 12px;
+        max-width: none;
+    }
+
+    .test-modal .modal-content {
+        border-radius: 14px;
+    }
+
+    .test-modal-header {
+        padding: 22px 20px;
+    }
+
+    .test-modal-header h4 {
+        font-size: 21px;
+    }
+
+    .test-modal-body {
+        padding: 20px;
+    }
+
+    .selected-test-car {
+        padding: 12px;
+    }
+
+    .test-submit-btn {
+        height: 46px;
+        font-size: 13px;
+    }
+
+    .details-test-btn {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+}
+
+
+@media (max-width: 360px) {
+
+    .test-modal-header {
+        padding: 18px 15px;
+    }
+
+    .test-modal-body {
+        padding: 16px;
+    }
+
+    .test-modal-header h4 {
+        font-size: 19px;
+    }
+
+}
+/* =========================================
+   CARHUB - ADDITIONAL STYLING
+   Existing CSS remains unchanged
+========================================= */
+
+
+/* =========================================
+   TEST DRIVE BUTTON
+========================================= */
+
+.details-info-section > .btn.btn-primary {
+    width: 100%;
+    min-height: 52px;
+    margin-top: 12px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+    background: transparent;
+    color: #172A45;
+
+    border: 1px solid #172A45;
+    border-radius: 9px;
+
+    font-size: 14px;
+    font-weight: 700;
+
+    transition: all 0.3s ease;
+}
+
+.details-info-section > .btn.btn-primary:hover {
+    background: #172A45;
+    color: #FFFFFF;
+
+    border-color: #172A45;
+
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(23, 42, 69, 0.15);
+}
+
+
+/* =========================================
+   TEST DRIVE MODAL
+========================================= */
+
+#test .modal-dialog {
+    width: calc(100% - 30px);
+    max-width: 520px;
+    margin: 1.5rem auto;
+}
+
+#test .modal-content {
+    overflow: hidden;
+
+    background: #F7F5F0;
+
+    border: 1px solid rgba(198, 161, 91, 0.4);
+    border-radius: 16px;
+
+    box-shadow: 0 20px 55px rgba(0, 0, 0, 0.2);
+}
+
+
+/* Modal Header */
+
+#test .modal-header {
+    padding: 22px 25px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    background: #172A45;
+
+    border-bottom: 2px solid #C6A15B;
+}
+
+#test .modal-header h5 {
+    margin: 0;
+
+    color: #C6A15B;
+
+    font-size: 21px;
+    font-weight: 750;
+}
+
+#test .modal-header .btn-close {
+    filter: invert(1);
+    opacity: 0.9;
+}
+
+#test .modal-header .btn-close:hover {
+    opacity: 1;
+}
+
+
+/* Modal Body */
+
+#test .modal-body {
+    padding: 25px 28px;
+
+    background: #F7F5F0;
+}
+
+
+/* Form Groups */
+
+#test .form-group,
+#test .modal-body form > div {
+    margin-bottom: 18px;
+}
+
+
+/* Labels */
+
+#test .form-label {
+    display: block;
+
+    margin-bottom: 8px;
+
+    color: #172A45;
+
+    font-size: 13px;
+    font-weight: 700;
+}
+
+
+/* Input Fields */
+
+#test .form-control,
+#test .form-select {
+    width: 100%;
+    min-height: 47px;
+
+    padding: 11px 13px;
+
+    color: #243247;
+    background: #FFFFFF;
+
+    border: 1px solid #DDD8CE;
+    border-radius: 9px;
+
+    font-size: 13px;
+
+    transition: all 0.25s ease;
+}
+
+#test .form-control:focus,
+#test .form-select:focus {
+    background: #FFFFFF;
+
+    border-color: #B89552;
+
+    box-shadow: 0 0 0 3px rgba(184, 149, 82, 0.14);
+
+    outline: none;
+}
+
+
+/* Date Input */
+
+#test input[type="date"] {
+    cursor: pointer;
+}
+
+
+/* Time Selection */
+
+#test .test-time-select {
+    margin: 2px 0 20px;
+    cursor: pointer;
+}
+
+
+/* Submit Button */
+
+#test .btn-success {
+    width: 100%;
+    min-height: 49px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-top: 5px;
+
+    color: #172A45;
+    background: #C6A15B;
+
+    border: 1px solid #C6A15B;
+    border-radius: 9px;
+
+    font-size: 14px;
+    font-weight: 750;
+
+    transition: all 0.3s ease;
+}
+
+#test .btn-success:hover {
+    color: #FFFFFF;
+    background: #172A45;
+
+    border-color: #172A45;
+    transform: translateY(-2px);
+}
+
+
+/* Modal Footer */
+
+#test .modal-footer {
+    display: none;
+}
+
+
+/* =========================================
+   TABLET RESPONSIVENESS
+========================================= */
+
+@media (max-width: 991px) {
+
+    .details-info-section > .btn.btn-primary {
+        min-height: 49px;
+    }
+
+    #test .modal-dialog {
+        max-width: 490px;
+    }
+
+}
+
+
+/* =========================================
+   MOBILE RESPONSIVENESS
+========================================= */
+
+@media (max-width: 767px) {
+
+    .details-info-section > .btn.btn-primary {
+        width: 100%;
+        min-height: 48px;
+        margin-top: 10px;
+    }
+
+    #test .modal-dialog {
+        width: calc(100% - 24px);
+        margin: 15px auto;
+    }
+
+    #test .modal-content {
+        border-radius: 14px;
+    }
+
+    #test .modal-header {
+        padding: 19px 18px;
+    }
+
+    #test .modal-header h5 {
+        font-size: 19px;
+    }
+
+    #test .modal-body {
+        padding: 20px;
+    }
+
+    #test .form-control,
+    #test .form-select {
+        min-height: 45px;
+        font-size: 13px;
+    }
+
+    #test .btn-success {
+        min-height: 46px;
+    }
+
+}
+
+
+/* =========================================
+   SMALL MOBILE RESPONSIVENESS
+========================================= */
+
+@media (max-width: 420px) {
+
+    .details-page {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .details-image {
+        max-width: 100%;
+    }
+
+    .details-info-section > .btn.btn-primary {
+        font-size: 13px;
+    }
+
+    #test .modal-dialog {
+        width: calc(100% - 20px);
+        margin: 10px auto;
+    }
+
+    #test .modal-header {
+        padding: 17px 15px;
+    }
+
+    #test .modal-header h5 {
+        font-size: 17px;
+    }
+
+    #test .modal-body {
+        padding: 16px;
+    }
+
+    #test .form-label {
+        font-size: 12px;
+    }
+
+}

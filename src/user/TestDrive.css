@@ -1,0 +1,183 @@
+.testdrive-page {
+    min-height: 100vh;
+    padding: 30px;
+    background: #F7F5F0;
+    color: #243247;
+}
+
+.testdrive-heading {
+    margin-bottom: 30px;
+}
+
+.testdrive-heading h2 {
+    color: #172A45;
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.testdrive-heading p {
+    color: #777;
+}
+
+/* Booking Card */
+
+.testdrive-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.testdrive-card {
+    display: flex;
+    gap: 25px;
+    padding: 22px;
+    background: white;
+    border: 1px solid #e8e2d6;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(23, 42, 69, 0.06);
+}
+
+/* Car Image */
+
+.testdrive-image {
+    width: 260px;
+    min-width: 260px;
+    height: 190px;
+    background: #f7f7f7;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.testdrive-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+/* Information */
+
+.testdrive-info {
+    flex: 1;
+    min-width: 0;
+}
+
+.testdrive-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+.testdrive-top h4 {
+    color: #172A45;
+    font-size: 21px;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.testdrive-top p {
+    color: #888;
+    margin: 0;
+}
+
+.booked-badge {
+    background: #e1f3e8;
+    color: #21834a;
+    padding: 7px 16px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.testdrive-info hr {
+    border-color: #e5e5e5;
+    margin: 18px 0;
+}
+
+/* Booking Details */
+
+.testdrive-details {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 18px;
+}
+
+.testdrive-details div {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.testdrive-details span {
+    color: #888;
+    font-size: 13px;
+}
+
+.testdrive-details strong {
+    color: #243247;
+    font-size: 14px;
+    font-weight: 600;
+    overflow-wrap: anywhere;
+}
+
+.testdrive-details .address-details {
+    grid-column: 1 / -1;
+}
+
+/* Empty */
+
+.testdrive-empty {
+    text-align: center;
+    padding: 65px 20px;
+    background: white;
+    border-radius: 12px;
+}
+
+.testdrive-empty h4 {
+    color: #172A45;
+    font-weight: 700;
+}
+
+.testdrive-empty p {
+    color: #888;
+}
+
+/* Responsive */
+
+@media (max-width: 768px) {
+
+    .testdrive-page {
+        padding: 18px;
+    }
+
+    .testdrive-card {
+        flex-direction: column;
+    }
+
+    .testdrive-image {
+        width: 100%;
+        min-width: 100%;
+        height: 220px;
+    }
+
+}
+
+@media (max-width: 480px) {
+
+    .testdrive-heading h2 {
+        font-size: 23px;
+    }
+
+    .testdrive-card {
+        padding: 15px;
+    }
+
+    .testdrive-details {
+        grid-template-columns: 1fr;
+    }
+
+    .testdrive-details .address-details {
+        grid-column: auto;
+    }
+
+}

@@ -1,0 +1,278 @@
+/* =====================================
+   CARHUB ADMIN UPDATE PRODUCT
+===================================== */
+
+.update-product-page {
+    width: 100%;
+    min-height: 100vh;
+    padding: 30px;
+    background: #F7F5F0;
+    color: #243247;
+    box-sizing: border-box;
+}
+
+/* Heading */
+
+.update-product-heading {
+    margin-bottom: 25px;
+}
+
+.update-product-heading h2 {
+    color: #172A45;
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 7px;
+}
+
+.update-product-heading p {
+    color: #858585;
+    font-size: 14px;
+    margin: 0;
+}
+
+/* Main Card */
+
+.update-product-card {
+    width: 100%;
+    max-width: 850px;
+    margin: 0 auto;
+    padding: 30px;
+
+    background: #FFFFFF;
+    border: 1px solid #E8E2D6;
+    border-radius: 14px;
+
+    box-shadow: 0 5px 20px rgba(23, 42, 69, 0.07);
+}
+
+/* Card Heading */
+
+.update-card-heading {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+
+    padding-bottom: 22px;
+    margin-bottom: 25px;
+
+    border-bottom: 1px solid #EAE5DB;
+}
+
+.update-icon {
+    width: 48px;
+    height: 48px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #F5EDDF;
+    color: #B08D57;
+
+    border-radius: 10px;
+    font-size: 20px;
+}
+
+.update-card-heading h4 {
+    color: #172A45;
+    font-size: 19px;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.update-card-heading p {
+    color: #888;
+    font-size: 13px;
+    margin: 0;
+}
+
+/* Form Groups */
+
+.update-form-group {
+    margin-bottom: 22px;
+}
+
+.update-form-group label,
+.update-image-preview label {
+    display: block;
+    margin-bottom: 9px;
+
+    color: #243247;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.update-form-group .form-control {
+    width: 100%;
+    min-height: 47px;
+
+    padding: 11px 14px;
+
+    border: 1px solid #DEDCD6;
+    border-radius: 8px;
+
+    background: #FCFCFB;
+
+    color: #243247;
+    font-size: 14px;
+
+    transition: 0.3s ease;
+}
+
+.update-form-group textarea.form-control {
+    min-height: 110px;
+    resize: vertical;
+}
+
+.update-form-group .form-control:focus {
+    border-color: #C6A15B;
+    box-shadow: 0 0 0 3px rgba(198, 161, 91, 0.15);
+    outline: none;
+}
+
+/* Image Preview */
+
+.update-image-preview {
+    margin-bottom: 25px;
+}
+
+.update-image-preview img {
+    display: block;
+
+    width: 100%;
+    max-width: 280px;
+    height: 180px;
+
+    object-fit: contain;
+
+    padding: 10px;
+
+    background: #F7F5F0;
+    border: 1px solid #E8E2D6;
+    border-radius: 10px;
+}
+
+/* Button */
+
+.update-button-section {
+    display: flex;
+    justify-content: flex-end;
+
+    padding-top: 20px;
+    border-top: 1px solid #EAE5DB;
+}
+
+.update-submit-btn {
+    min-width: 190px;
+    padding: 13px 22px;
+
+    background: #172A45;
+    border: 1px solid #172A45;
+    border-radius: 8px;
+
+    color: #FFFFFF;
+
+    font-size: 14px;
+    font-weight: 700;
+
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.update-submit-btn i {
+    margin-right: 9px;
+}
+
+.update-submit-btn:hover {
+    background: #C6A15B;
+    border-color: #C6A15B;
+    color: #172A45;
+    transform: translateY(-2px);
+}
+
+/* =====================================
+   TABLET RESPONSIVE
+===================================== */
+
+@media (max-width: 991px) {
+
+    .update-product-page {
+        padding: 25px 20px;
+    }
+
+    .update-product-card {
+        max-width: 750px;
+    }
+
+}
+
+/* =====================================
+   MOBILE RESPONSIVE
+===================================== */
+
+@media (max-width: 576px) {
+
+    .update-product-page {
+        padding: 18px 12px;
+    }
+
+    .update-product-heading h2 {
+        font-size: 23px;
+    }
+
+    .update-product-card {
+        padding: 20px 15px;
+        border-radius: 10px;
+    }
+
+    .update-card-heading {
+        gap: 10px;
+    }
+
+    .update-icon {
+        width: 42px;
+        height: 42px;
+        font-size: 17px;
+    }
+
+    .update-card-heading h4 {
+        font-size: 16px;
+    }
+
+    .update-form-group {
+        margin-bottom: 18px;
+    }
+
+    .update-submit-btn {
+        width: 100%;
+    }
+
+    .update-button-section {
+        display: block;
+    }
+
+    .update-image-preview img {
+        max-width: 100%;
+    }
+
+}
+
+/* =====================================
+   SMALL MOBILE
+===================================== */
+
+@media (max-width: 360px) {
+
+    .update-product-page {
+        padding: 12px 8px;
+    }
+
+    .update-product-card {
+        padding: 16px 12px;
+    }
+
+    .update-product-heading h2 {
+        font-size: 21px;
+    }
+
+}

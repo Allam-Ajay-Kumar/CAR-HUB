@@ -1,0 +1,368 @@
+
+/* =========================================
+   CARHUB ADD PRODUCTS
+   Navy + Champagne Gold + Ivory Theme
+========================================= */
+
+/* Main page */
+
+.addcar-page {
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+    min-height: 100vh;
+    padding: 10px;
+    color: #243247;
+    box-sizing: border-box;
+}
+
+.addcar-page *,
+.addcar-page *::before,
+.addcar-page *::after {
+    box-sizing: border-box;
+}
+
+/* Header */
+
+.addcar-header {
+    margin-bottom: 15px;
+}
+
+.addcar-label {
+    color: #A5813E;
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+
+.addcar-header h2 {
+    margin: 6px 0;
+    color: #172A45;
+    font-size: 26px;
+    font-weight: 800;
+}
+
+.addcar-header p {
+    margin: 0;
+    color: #7B8492;
+    font-size: 13px;
+    line-height: 1.5;
+}
+
+/* Form card */
+
+.addcar-card {
+    width: 100%;
+    max-width: 900px;
+    padding: 22px;
+    background: #FFFFFF;
+    border: 1px solid #E7E2D8;
+    border-radius: 16px;
+    box-shadow: 0 8px 25px rgba(23, 42, 69, 0.05);
+}
+
+/* Card header */
+
+.addcar-card-header {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin-bottom: 18px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #E7E2D8;
+}
+
+.addcar-heading-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    width: 45px;
+    height: 45px;
+    border-radius: 12px;
+    background: #F4E9D5;
+    color: #8C6B32;
+    font-size: 22px;
+}
+
+.addcar-card-header h4 {
+    margin: 0 0 5px;
+    color: #172A45;
+    font-size: 18px;
+    font-weight: 800;
+}
+
+.addcar-card-header p {
+    margin: 0;
+    color: #7B8492;
+    font-size: 12px;
+}
+
+/* Form fields */
+
+.addcar-page .form-group {
+    width: 100%;
+    min-width: 0;
+}
+
+.addcar-page .form-group label {
+    display: block;
+    margin-bottom: 7px;
+    color: #243247;
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.addcar-page .form-control {
+    width: 100%;
+    min-width: 0;
+    min-height: 42px;
+    padding: 10px 14px;
+    border: 1px solid #DEDCD5;
+    border-radius: 9px;
+    background-color: #FBFAF7;
+    color: #243247;
+    font-size: 13px;
+    box-shadow: none;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.addcar-page .form-control::placeholder {
+    color: #A0A5AE;
+}
+
+.addcar-page .form-control:focus {
+    border-color: #C6A15B;
+    background-color: #FFFFFF;
+    box-shadow: 0 0 0 3px rgba(198, 161, 91, 0.15);
+    outline: none;
+}
+
+/* Submit button */
+
+.addcar-actions {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 18px;
+    padding-top: 15px;
+    border-top: 1px solid #E7E2D8;
+}
+
+.addcar-submit {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    min-height: 44px;
+    padding: 11px 24px;
+    border: 1px solid #172A45;
+    border-radius: 9px;
+    background: #172A45;
+    color: #FFFFFF;
+    font-size: 13px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.25s ease;
+}
+
+.addcar-submit:hover {
+    border-color: #C6A15B;
+    background: #C6A15B;
+    color: #172A45;
+}
+
+/* Information note */
+
+.addcar-note {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    margin-top: 12px;
+    color: #7B8492;
+    font-size: 12px;
+    line-height: 1.5;
+}
+
+.addcar-note i {
+    flex-shrink: 0;
+    color: #A5813E;
+    font-size: 15px;
+}
+
+/* =========================================
+   LAPTOP / SHORT HEIGHT SCREENS
+========================================= */
+
+@media (max-height: 800px) and (min-width: 768px) {
+
+    .addcar-page {
+        padding: 8px;
+        overflow-y: hidden;
+        height: 100vh;
+        min-height: 0;          
+    }
+
+    .addcar-header {
+        margin-bottom: 12px;
+    }
+
+    .addcar-header h2 {
+        font-size: 23px;
+    }
+
+    .addcar-card {
+        padding: 17px 22px;
+    }
+
+    .addcar-card-header {
+        margin-bottom: 12px;
+        padding-bottom: 10px;
+    }
+
+    .addcar-heading-icon {
+        width: 40px;
+        height: 40px;
+        font-size: 19px;
+    }
+
+    .addcar-page .form-control {
+        min-height: 38px;
+        padding: 8px 12px;
+    }
+
+    .addcar-page .form-group label {
+        margin-bottom: 5px;
+    }
+
+    .addcar-actions {
+        margin-top: 13px;
+        padding-top: 12px;
+    }
+
+    .addcar-note {
+        margin-top: 9px;
+    }
+}
+
+/* =========================================
+   TABLETS
+========================================= */
+
+@media (max-width: 991px) {
+
+    .addcar-card {
+        padding: 20px;
+    }
+
+    .addcar-header h2 {
+        font-size: 24px;
+    }
+}
+
+/* =========================================
+   MOBILE AND SMALL TABLETS
+========================================= */
+
+@media (max-width: 767px) {
+
+    .addcar-page {
+        width: 100%;
+        height: auto;
+        min-height: 100vh;
+        padding: 16px;
+        overflow-y: visible;
+    }
+
+    .addcar-header {
+        margin-bottom: 20px;
+    }
+
+    .addcar-header h2 {
+        font-size: 23px;
+    }
+
+    .addcar-header p {
+        font-size: 13px;
+    }
+
+    .addcar-card {
+        width: 100%;
+        max-width: 100%;
+        padding: 20px;
+        border-radius: 12px;
+    }
+
+    .addcar-card-header {
+        margin-bottom: 20px;
+        padding-bottom: 16px;
+    }
+
+    .addcar-heading-icon {
+        width: 42px;
+        height: 42px;
+        font-size: 20px;
+    }
+
+    .addcar-card-header h4 {
+        font-size: 17px;
+    }
+
+    .addcar-actions {
+        margin-top: 20px;
+    }
+
+    .addcar-submit {
+        width: 100%;
+    }
+}
+
+/* =========================================
+   SMALL MOBILE PHONES
+========================================= */
+
+@media (max-width: 480px) {
+
+    .addcar-page {
+        padding: 12px;
+    }
+
+    .addcar-label {
+        font-size: 9px;
+        letter-spacing: 1.5px;
+    }
+
+    .addcar-header h2 {
+        font-size: 21px;
+    }
+
+    .addcar-card {
+        padding: 16px;
+    }
+
+    .addcar-card-header {
+        gap: 10px;
+    }
+
+    .addcar-card-header p {
+        font-size: 11px;
+    }
+
+    .addcar-page .form-control {
+        min-height: 44px;
+        padding: 11px;
+        font-size: 12px;
+    }
+
+    .addcar-page .form-group label {
+        font-size: 12px;
+    }
+
+    .addcar-submit {
+        padding: 12px 16px;
+        font-size: 12px;
+    }
+
+    .addcar-note {
+        font-size: 11px;
+    }
+}

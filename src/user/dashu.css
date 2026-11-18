@@ -1,0 +1,32 @@
+/* Mobile responsive sidebar */
+@media (max-width: 767px) {
+
+    .sidebar {
+        width: 100% !important;
+        height: auto !important;
+        min-height: auto !important;
+        position: relative !important;
+        overflow: visible !important;
+        padding: 15px !important;
+        border-right: none !important;
+        border-bottom: 3px solid #C1121F;
+    }
+
+    .sidebar .navbar-nav {
+        width: 100%;
+        gap: 10px !important;
+        padding-left: 0 !important;
+    }
+
+    .sidebar .nav-item {
+        width: 100%;
+    }
+
+    .sidebar .nav-link {
+        padding: 10px 15px;
+    }
+
+    .sidebar > div {
+        margin-bottom: 10px !important;
+    }
+}

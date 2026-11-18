@@ -1,0 +1,377 @@
+
+/* =========================================
+   CARHUB MY ORDERS
+   Navy + Champagne Gold + Ivory
+========================================= */
+
+.orders-page {
+    width: 100%;
+    min-height: 100vh;
+    padding: 35px 25px;
+    background: #F7F5F0;
+    color: #243247;
+    box-sizing: border-box;
+}
+
+.orders-page *,
+.orders-page *::before,
+.orders-page *::after {
+    box-sizing: border-box;
+}
+
+.orders-container {
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+/* Header */
+
+.orders-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.orders-subtitle {
+    display: inline-block;
+    margin-bottom: 10px;
+    color: #A78342;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 3px;
+}
+
+.orders-header h1 {
+    margin: 0;
+    color: #172A45;
+    font-size: clamp(28px, 4vw, 42px);
+    font-weight: 800;
+}
+
+.orders-header h1 span {
+    color: #B89552;
+}
+
+.orders-header p {
+    margin-top: 12px;
+    color: #697586;
+    font-size: 15px;
+}
+
+/* Grid */
+
+.orders-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 25px;
+    align-items: stretch;
+}
+
+.orders-item {
+    min-width: 0;
+}
+
+/* Order Card */
+
+.orders-card {
+    height: 100%;
+    overflow: hidden;
+    background: #FFFFFF;
+    border: 1px solid #E8E1D4;
+    border-radius: 16px;
+    box-shadow: 0 5px 20px rgba(23, 42, 69, 0.06);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.orders-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 14px 32px rgba(23, 42, 69, 0.13);
+}
+
+/* Image */
+
+.orders-image-box {
+    position: relative;
+    width: 100%;
+    height: 230px;
+    overflow: hidden;
+    background: #ECEAE5;
+}
+
+.orders-image {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+}
+
+.orders-card:hover .orders-image {
+    transform: scale(1.05);
+}
+
+/* Order Badge */
+
+.orders-badge {
+    position: absolute;
+    top: 14px;
+    left: 14px;
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+    padding: 8px 12px;
+    border-radius: 20px;
+    background: #FFFFFF;
+    color: #247A50;
+    font-size: 12px;
+    font-weight: 700;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Card Body */
+
+.orders-card-body {
+    padding: 22px;
+}
+
+.orders-brand {
+    display: inline-block;
+    margin-bottom: 7px;
+    color: #A78342;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+}
+
+.orders-car-name {
+    margin: 0 0 20px;
+    color: #172A45;
+    font-size: 21px;
+    font-weight: 750;
+    overflow-wrap: anywhere;
+}
+
+/* Price */
+
+.orders-price-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid #ECE7DE;
+}
+
+.orders-price-section > span {
+    color: #7A8492;
+    font-size: 13px;
+}
+
+.orders-price-section h4 {
+    margin: 0;
+    color: #172A45;
+    font-size: 21px;
+    font-weight: 800;
+    overflow-wrap: anywhere;
+}
+
+/* Quantity */
+
+.orders-quantity {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 16px;
+    padding: 12px;
+    border-radius: 8px;
+    background: #F7F5F0;
+    color: #465367;
+    font-size: 13px;
+}
+
+.orders-quantity i {
+    color: #A78342;
+}
+
+.orders-quantity strong {
+    margin-left: auto;
+    color: #172A45;
+    font-size: 15px;
+}
+
+/* Divider */
+
+.orders-divider {
+    height: 1px;
+    margin: 20px 0;
+    background: #E8E1D4;
+}
+
+/* Customer Information */
+
+.orders-info {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.orders-info-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    min-width: 0;
+}
+
+.orders-info-icon {
+    flex-shrink: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 38px;
+    height: 38px;
+    border-radius: 9px;
+    background: #F7F1E5;
+    color: #A78342;
+}
+
+.orders-info-item > div {
+    flex: 1;
+    min-width: 0;
+}
+
+.orders-info-item small {
+    display: block;
+    margin-bottom: 5px;
+    color: #7A8492;
+    font-size: 11px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.orders-info-item p {
+    margin: 0;
+    color: #243247;
+    font-size: 13px;
+    line-height: 1.7;
+    overflow-wrap: anywhere;
+    word-break: break-word;
+}
+
+/* Empty Orders */
+
+.orders-empty {
+    grid-column: 1 / -1;
+    padding: 65px 20px;
+    text-align: center;
+    background: #FFFFFF;
+    border: 1px dashed #D7C8AA;
+    border-radius: 16px;
+}
+
+.orders-empty > i {
+    margin-bottom: 20px;
+    color: #B89552;
+    font-size: 55px;
+}
+
+.orders-empty h3 {
+    margin-bottom: 10px;
+    color: #172A45;
+    font-size: 24px;
+    font-weight: 750;
+}
+
+.orders-empty p {
+    max-width: 450px;
+    margin: 0 auto;
+    color: #697586;
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+/* Footer */
+
+.orders-footer {
+    margin-top: 30px;
+    padding: 16px;
+    border-top: 1px solid #E4DCCF;
+    color: #697586;
+    text-align: center;
+    font-size: 14px;
+}
+
+.orders-footer i {
+    margin-right: 7px;
+    color: #B89552;
+}
+
+/* =========================================
+   RESPONSIVE DESIGN
+========================================= */
+
+@media (max-width: 1100px) {
+    .orders-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 22px;
+    }
+
+    .orders-image-box {
+        height: 220px;
+    }
+}
+
+@media (max-width: 600px) {
+    .orders-page {
+        padding: 25px 14px;
+    }
+
+    .orders-header {
+        margin-bottom: 28px;
+    }
+
+    .orders-header p {
+        font-size: 13px;
+    }
+
+    .orders-grid {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 20px;
+    }
+
+    .orders-image-box {
+        height: 230px;
+    }
+
+    .orders-card-body {
+        padding: 18px;
+    }
+
+    .orders-car-name {
+        font-size: 19px;
+    }
+
+    .orders-price-section h4 {
+        font-size: 19px;
+    }
+
+    .orders-empty {
+        padding: 45px 16px;
+    }
+}
+
+@media (max-width: 360px) {
+    .orders-page {
+        padding: 20px 10px;
+    }
+
+    .orders-image-box {
+        height: 190px;
+    }
+
+    .orders-price-section {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+}

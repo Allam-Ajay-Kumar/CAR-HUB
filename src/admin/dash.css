@@ -1,0 +1,249 @@
+/* General row styling */
+
+/* Admin Layout */
+
+.admin-layout {
+    margin: 0;
+    width: 100%;
+    max-width: 100%;
+    min-height: 100vh;
+    align-items: flex-start;
+}
+
+/* Sidebar */
+
+.sidebar {
+    height: 100vh;
+    width: 16.666667%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+
+    padding: 30px 12px;
+
+    background-color: #E5E7EB !important;
+    border-right: 3px solid #C1121F;
+
+    overflow-y: auto;
+}
+
+/* Main Content */
+
+.admin-main-content {
+    min-height: 100vh;
+    min-width: 0;
+    max-width: 100%;
+    padding: 15px;
+    background-color: #FFFFFF;
+    overflow-x: clip;
+}
+/* Sidebar menu */
+
+.sidebar .navbar-nav {
+    width: 100%;
+}
+
+/* Navigation links */
+
+.sidebar .nav-link {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    color: #1F2937;
+    font-size: 15px;
+    font-weight: 600;
+
+    padding: 13px 16px;
+    border-radius: 8px;
+
+    transition: all 0.3s ease;
+}
+
+/* Icons */
+
+.sidebar .nav-link i {
+    width: 20px;
+    text-align: center;
+}
+
+/* Navigation hover effect */
+
+.sidebar .nav-link:hover {
+    color: #FFFFFF;
+    background-color: #C1121F;
+    padding-left: 22px;
+}
+
+/* Logout button */
+
+.sidebar button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+    width: calc(100% - 24px);
+
+    margin-top: 25px;
+    margin-left: 12px;
+    margin-right: 12px;
+
+    padding: 11px 16px;
+
+    border: 1px solid #C1121F;
+    border-radius: 8px;
+
+    background-color: #C1121F;
+    color: #FFFFFF;
+
+    font-size: 15px;
+    font-weight: 700;
+
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+/* Logout hover effect */
+
+.sidebar button:hover {
+    background-color: #8F0D17;
+    color: #FFFFFF;
+    border-color: #8F0D17;
+}
+
+/* Main content area */
+
+.admin-main-content {
+    min-height: 100vh;
+    padding: 25px;
+    background-color: #FFFFFF;
+    min-width: 0;
+}
+
+/* =================================
+   TABLET RESPONSIVE
+================================= */
+
+@media (max-width: 991px) {
+
+    .sidebar {
+        padding: 25px 8px;
+    }
+
+    .sidebar .nav-link {
+        font-size: 13px;
+        padding: 12px 10px;
+        gap: 8px;
+    }
+
+    .sidebar button {
+        font-size: 13px;
+        margin-left: 5px;
+        margin-right: 5px;
+        width: calc(100% - 10px);
+    }
+
+}
+
+/* =================================
+   MOBILE RESPONSIVE
+================================= */
+
+@media (max-width: 767px) {
+
+    .admin-layout {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .sidebar {
+        height: auto;
+        min-height: auto;
+        padding: 15px;
+
+        position: relative;
+        top: auto;
+
+        border-right: none;
+        border-bottom: 3px solid #C1121F;
+    }
+
+    .sidebar .navbar-nav {
+        gap: 8px !important;
+    }
+
+    .sidebar .nav-link {
+        padding: 12px 15px;
+    }
+
+    .sidebar button {
+        margin-top: 12px;
+    }
+
+    .admin-main-content {
+        width: 100%;
+        min-height: 100vh;
+        padding: 15px;
+    }
+
+}
+
+/* =================================
+   SMALL MOBILE
+================================= */
+
+@media (max-width: 400px) {
+
+    .sidebar {
+        padding: 12px;
+    }
+
+    .sidebar .nav-link {
+        font-size: 14px;
+        padding: 11px;
+    }
+
+    .admin-main-content {
+        padding: 10px;
+    }
+
+}
+/* Test Drive Bookings sidebar link */
+
+.sidebar .nav-link {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    width: 100%;
+}
+
+/* Test Drive icon */
+
+.sidebar .nav-link i {
+    width: 20px;
+    text-align: center;
+    color: #C1121F;
+}
+
+/* Test Drive hover */
+
+.sidebar .nav-link:hover i {
+    color: #FFFFFF;
+}
+
+/* Test Drive active link */
+
+.sidebar .nav-link.active {
+    background-color: #C1121F;
+    color: #FFFFFF;
+}
+
+.sidebar .nav-link.active i {
+    color: #FFFFFF;
+}

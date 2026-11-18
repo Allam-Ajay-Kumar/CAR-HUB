@@ -1,0 +1,142 @@
+/* ADMIN ORDERS PAGE */
+
+.admin-orders-page {
+    min-height: 100vh;
+    padding: 30px;
+    background: #F7F5F0;
+    color: #243247;
+    box-sizing: border-box;
+}
+
+.admin-orders-heading h2 {
+    color: #172A45;
+    font-size: 27px;
+    font-weight: 700;
+    margin-bottom: 7px;
+}
+
+.admin-orders-heading p {
+    color: #888;
+    font-size: 14px;
+}
+
+/* Order Count */
+
+.orders-count {
+    display: inline-block;
+    margin: 20px 0;
+    padding: 12px 20px;
+    background: white;
+    border: 1px solid #E8E2D6;
+    border-radius: 8px;
+    color: #172A45;
+}
+
+.orders-count strong {
+    color: #B08D57;
+}
+
+/* Table Container */
+
+.orders-table-container {
+    width: 100%;
+    overflow-x: auto;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(23, 42, 69, 0.07);
+}
+
+/* Table */
+
+.admin-orders-table {
+    width: 100%;
+    min-width: 850px;
+    border-collapse: collapse;
+}
+
+.admin-orders-table thead {
+    background: #172A45;
+    color: white;
+}
+
+.admin-orders-table th {
+    padding: 17px 15px;
+    text-align: left;
+    font-size: 13px;
+    font-weight: 600;
+    white-space: nowrap;
+}
+
+.admin-orders-table td {
+    padding: 15px;
+    border-bottom: 1px solid #eee;
+    font-size: 14px;
+    vertical-align: middle;
+}
+
+.admin-orders-table tbody tr:hover {
+    background: #FBF9F4;
+}
+
+/* Car Details */
+
+.admin-order-car {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    min-width: 190px;
+}
+
+.admin-order-car img {
+    width: 75px;
+    height: 55px;
+    object-fit: contain;
+    border-radius: 6px;
+    background: #F7F5F0;
+}
+
+.admin-order-car div {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.admin-order-car strong {
+    color: #172A45;
+    font-size: 13px;
+}
+
+.admin-order-car span {
+    color: #888;
+    font-size: 12px;
+}
+
+/* Empty State */
+
+.no-orders {
+    padding: 65px 20px;
+    text-align: center;
+    background: white;
+    border-radius: 12px;
+}
+
+.no-orders h4 {
+    color: #172A45;
+    font-weight: 700;
+}
+
+.no-orders p {
+    color: #888;
+}
+
+/* Responsive */
+
+@media (max-width: 768px) {
+    .admin-orders-page {
+        padding: 18px;
+    }
+
+    .admin-orders-heading h2 {
+        font-size: 23px;
+    }
+}

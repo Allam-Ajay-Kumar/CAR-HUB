@@ -1,0 +1,538 @@
+
+/* =========================================
+   CARHUB LOGIN PAGE
+   Navy + Champagne Gold + Ivory
+========================================= */
+
+* {
+    box-sizing: border-box;
+}
+
+.login-page {
+    width: 100%;
+    min-height: 100vh;
+
+    /* FULL PAGE BACKGROUND IMAGE */
+
+    background:
+        
+        url("https://www.ilusso.com/wp-content/uploads/Luxury-Cars-of-2025-scaled-e1745614598161-1024x504.jpeg");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+    font-family: 'Segoe UI', sans-serif;
+    overflow-x: hidden;
+}
+
+.login-page .container-fluid {
+    padding: 0;
+}
+
+.login-page .row {
+    margin: 0;
+}
+
+
+/* =========================================
+   LEFT HERO SECTION
+========================================= */
+
+.login-hero {
+    position: relative;
+    min-height: 100vh;
+    padding: 70px 9%;
+
+    background: transparent;
+    color: white;
+}
+
+/* Decorative Gold Line */
+
+.login-hero::before {
+    content: "";
+
+    position: absolute;
+    width: 5px;
+    height: 130px;
+
+    left: 0;
+    top: 50%;
+
+    transform: translateY(-50%);
+
+    background: #C6A15B;
+    border-radius: 0 5px 5px 0;
+}
+
+
+/* Hero Content */
+
+.hero-content {
+    max-width: 600px;
+    position: relative;
+    z-index: 1;
+
+    animation: heroFade 1s ease;
+}
+
+.hero-content h1 {
+    font-size: clamp(38px, 4.5vw, 65px);
+
+    font-weight: 800;
+    line-height: 1.18;
+
+    letter-spacing: -1.5px;
+
+    margin-bottom: 25px;
+
+    color: #FFFFFF;
+}
+
+.hero-content h1 span {
+    color: #C6A15B;
+}
+
+.hero-content p {
+    max-width: 470px;
+
+    font-size: 17px;
+    line-height: 1.9;
+
+    color: #D5DCE5;
+
+    margin-bottom: 35px;
+}
+
+.hero-content h5 {
+    color: #C6A15B;
+
+    font-size: 17px;
+    font-weight: 600;
+
+    letter-spacing: 0.5px;
+}
+
+
+/* =========================================
+   RIGHT LOGIN SECTION
+========================================= */
+
+.login-form-section {
+    min-height: 100vh;
+    padding: 40px 25px;
+
+    /* Transparent to show full-page image */
+
+    background: transparent;
+}
+
+
+/* =========================================
+   LOGIN CARD
+========================================= */
+
+.login-card {
+    width: 100%;
+    max-width: 450px;
+
+    padding: 42px 38px;
+
+    background: rgba(255, 255, 255, 0.97);
+
+    border-radius: 18px;
+    border: 1px solid #EAE5DB;
+
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.2);
+
+    animation: cardFade 0.8s ease;
+}
+
+
+/* =========================================
+   BRAND AND HEADING
+========================================= */
+
+.brand-title {
+    font-size: 35px;
+
+    font-weight: 900;
+    letter-spacing: 2px;
+
+    color: #172A45;
+
+    margin-bottom: 25px;
+}
+
+.brand-title span {
+    color: #C6A15B;
+}
+
+.login-card h3 {
+    font-size: 27px;
+
+    font-weight: 700;
+
+    color: #172A45;
+
+    margin-bottom: 8px;
+}
+
+.login-card .text-muted {
+    font-size: 14px;
+    color: #858585 !important;
+}
+
+
+/* =========================================
+   FORM
+========================================= */
+
+.login-card .form-label {
+    font-size: 14px;
+    font-weight: 600;
+
+    color: #243247;
+
+    margin-bottom: 9px;
+}
+
+.login-card .form-control {
+    height: 49px;
+
+    padding: 10px 15px;
+
+    border: 1px solid #DEDCD6;
+    border-radius: 8px;
+
+    background: #FCFCFB;
+
+    font-size: 14px;
+    color: #243247;
+
+    transition: 0.3s ease;
+}
+
+.login-card .form-control::placeholder {
+    color: #A5A5A5;
+}
+
+.login-card .form-control:focus {
+    border-color: #C6A15B;
+
+    background: #FFFFFF;
+
+    box-shadow: 0 0 0 3px rgba(198, 161, 91, 0.15);
+
+    outline: none;
+}
+
+
+/* =========================================
+   REMEMBER AND FORGOT PASSWORD
+========================================= */
+
+.login-card .form-check-label {
+    font-size: 13px;
+    color: #666;
+}
+
+.login-card .form-check-input {
+    cursor: pointer;
+    border-color: #C6A15B;
+}
+
+.login-card .form-check-input:checked {
+    background-color: #172A45;
+    border-color: #172A45;
+}
+
+.forgot-link {
+    font-size: 13px;
+
+    font-weight: 600;
+
+    color: #A47B36;
+
+    text-decoration: none;
+
+    transition: 0.3s;
+}
+
+.forgot-link:hover {
+    color: #172A45;
+    text-decoration: underline;
+}
+
+
+/* =========================================
+   LOGIN BUTTON
+========================================= */
+
+.login-btn {
+    height: 50px;
+
+    background: #172A45;
+    color: #FFFFFF;
+
+    border: 1px solid #172A45;
+    border-radius: 8px;
+
+    font-size: 15px;
+    font-weight: 700;
+
+    letter-spacing: 0.5px;
+
+    transition: all 0.3s ease;
+}
+
+.login-btn:hover {
+    background: #C6A15B;
+    border-color: #C6A15B;
+
+    color: #172A45;
+
+    transform: translateY(-2px);
+
+    box-shadow: 0 6px 15px rgba(198, 161, 91, 0.25);
+}
+
+.login-btn:active {
+    transform: scale(0.98);
+}
+
+
+/* =========================================
+   DIVIDER
+========================================= */
+
+.divider {
+    display: flex;
+
+    align-items: center;
+    gap: 15px;
+
+    margin: 27px 0;
+
+    color: #999;
+
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.divider::before,
+.divider::after {
+    content: "";
+
+    flex: 1;
+
+    height: 1px;
+
+    background: #E7E3DA;
+}
+
+
+/* =========================================
+   SIGNUP
+========================================= */
+
+.signup-text {
+    font-size: 14px;
+    color: #777;
+}
+
+.signup-text a {
+    color: #A47B36;
+
+    font-weight: 700;
+
+    text-decoration: none;
+
+    transition: 0.3s;
+}
+
+.signup-text a:hover {
+    color: #172A45;
+    text-decoration: underline;
+}
+
+
+/* =========================================
+   FOOTER
+========================================= */
+
+.footer-text {
+    margin-top: 35px;
+    margin-bottom: 0;
+
+    font-size: 11px;
+
+    color: #A0A0A0;
+}
+
+
+/* =========================================
+   ANIMATIONS
+========================================= */
+
+@keyframes heroFade {
+
+    from {
+        opacity: 0;
+        transform: translateX(-25px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+
+}
+
+@keyframes cardFade {
+
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+}
+
+
+/* =========================================
+   TABLET RESPONSIVE
+========================================= */
+
+@media (max-width: 991px) {
+
+    .login-hero {
+        min-height: 430px;
+        padding: 65px 8%;
+    }
+
+    .hero-content h1 {
+        font-size: 48px;
+    }
+
+    .hero-content p {
+        font-size: 15px;
+    }
+
+    .login-form-section {
+        min-height: auto;
+        padding: 55px 25px;
+    }
+
+    .login-card {
+        max-width: 480px;
+    }
+
+}
+
+
+/* =========================================
+   MOBILE RESPONSIVE
+========================================= */
+
+@media (max-width: 576px) {
+
+    .login-page {
+        background-attachment: scroll;
+        background-position: center;
+    }
+
+    .login-hero {
+        min-height: 340px;
+        padding: 55px 25px;
+    }
+
+    .login-hero::before {
+        height: 90px;
+    }
+
+    .hero-content h1 {
+        font-size: 36px;
+
+        letter-spacing: -0.5px;
+
+        margin-bottom: 17px;
+    }
+
+    .hero-content p {
+        font-size: 14px;
+
+        line-height: 1.7;
+
+        margin-bottom: 20px;
+    }
+
+    .hero-content h5 {
+        font-size: 14px;
+    }
+
+    .login-form-section {
+        padding: 35px 18px;
+    }
+
+    .login-card {
+        padding: 30px 22px;
+        border-radius: 13px;
+    }
+
+    .brand-title {
+        font-size: 30px;
+    }
+
+    .login-card h3 {
+        font-size: 23px;
+    }
+
+    .login-card .form-control {
+        height: 46px;
+    }
+
+    .login-btn {
+        height: 47px;
+    }
+
+    .footer-text {
+        margin-top: 25px;
+    }
+
+}
+
+
+/* =========================================
+   SMALL MOBILE
+========================================= */
+
+@media (max-width: 360px) {
+
+    .hero-content h1 {
+        font-size: 30px;
+    }
+
+    .login-card {
+        padding: 25px 17px;
+    }
+
+    .login-card h3 {
+        font-size: 21px;
+    }
+
+    .forgot-link {
+        font-size: 11px;
+    }
+
+    .login-card .form-check-label {
+        font-size: 11px;
+    }
+
+}
